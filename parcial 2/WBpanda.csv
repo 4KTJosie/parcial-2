@@ -1,0 +1,17 @@
+import pandas as pd
+import pandas as pd
+
+# URL del archivo .csv
+url = "C:\\Users\\venta\\Downloads\\josie U\\API_SH.IMM.MEAS_DS2_en_csv_v2_787\\API_SH.IMM.MEAS_DS2_en_csv_v2_787.csv"
+
+# Descargar el archivo y cargarlo en un DataFrame de pandas
+df = pd.read_csv("/content/API_SH.IMM.MEAS_DS2_en_csv_v2_787.csv")
+
+# Filtrar por Panamá y por la edad de 12-23 meses
+df_panama = df[(df['country'] == 'Panama') & (df['age'] == '12-23 months')]
+df_panama.reset_index(drop=True, inplace=True)
+df = pd.read_csv ("/content/API_SH.IMM.MEAS_DS2_en_csv_v2_787.csv/")
+
+# Filtrar por Panamá y por la edad de 12-23 meses
+df_panama = df[(df['country'] == 'Panama') & (df['age'] == '12-23 months')]
+df_panama.reset_index(drop=True, inplace=True)
